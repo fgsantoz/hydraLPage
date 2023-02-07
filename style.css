@@ -110,8 +110,18 @@ p {
   color: #ffffff;
 }
 
-.banner.vr {
+.banner-vr {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  width: 524px;
+  height: 455px;
+  background: rgba(0, 0, 0, 0.13);
+  border-radius: 100px 100px 100px 240px;
+}
+
+#banner {
+  width: 490px;
+  height: 426px;
+  border-radius: 100px 100px 100px 240px;
 }
