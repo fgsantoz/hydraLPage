@@ -5,44 +5,35 @@
 }
 
 body {
-  background: #302c42 url(assets/images/stipes.svg) center/cover no-repeat;
+  background: #302c42 url(./assets/images/stipes.svg) center/cover no-repeat;
   height: 100vh;
   display: flex;
   justify-content: center;
 }
 
-.container,
 section {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
-  width: 100%;
-  max-width: 1272px;
-  gap: 40px;
+  width: 1272px;
 }
 
 header {
-  padding: 30px 0;
+  padding: 60px 0 48px 0;
   position: fixed;
   width: 100%;
   background: linear-gradient(
     to bottom,
-    rgba(48, 44, 66, 0.85) 60%,
+    rgba(48, 44, 66, 0.85) 75%,
     transparent
   );
-}
-
-.landing {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 40px;
-}
-
-#hero {
-  display: block;
-  padding-top: 209px;
 }
 
 nav {
@@ -98,17 +89,18 @@ nav :hover {
 
 #build {
   width: 214px;
-  margin: 24px 0;
 }
 
 .build-button {
   display: flex;
   align-items: center;
+  margin-top: 65px;
   gap: 12px;
 }
 
 h1 {
   font: 700 46px/56px "Montserrat", sans-serif;
+  padding-bottom: 58px;
   color: #fff;
 }
 
@@ -125,6 +117,7 @@ h1 {
   font: 400 16px/20px "Montserrat", sans-serif;
   color: #fff;
 }
+
 .banner-vr,
 #banner {
   display: flex;
@@ -141,10 +134,15 @@ h1 {
   height: 426px;
 }
 
+#banner-description {
+  padding: 215px 0 80px 0;
+}
+
 .info-box {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 1272px;
   height: 167px;
   background: radial-gradient(
     50% 2900.76% at 50% 53.89%,
@@ -152,7 +150,8 @@ h1 {
     #211e2e 100%
   );
   border-radius: 90px;
-  padding: 52px;
+  margin: 0 auto;
+  padding: 80px 65px;
 }
 
 .divider {
